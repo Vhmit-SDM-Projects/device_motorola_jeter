@@ -6,13 +6,6 @@
 
 DEVICE_PATH := device/motorola/jeter
 
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8937
-TARGET_NO_BOOTLOADER := true
-
-# Platform
-TARGET_BOARD_PLATFORM := msm8937
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -26,8 +19,6 @@ TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-
-BUILD_BROKEN_DUP_RULES := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -55,11 +46,22 @@ BOARD_SUPPORTS_SOUND_TRIGGER := false
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+# Assert
+TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
+
+# Bootloader / Platform
+TARGET_BOOTLOADER_BOARD_NAME := MSM8937
+TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM := msm8937
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
@@ -68,18 +70,15 @@ BOARD_NO_CHARGER_LED := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
-
 # GPS
 LOC_HIDL_VERSION := 4.0
-
-# Display
-TARGET_SCREEN_DENSITY := 320
 
 # GPU
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
@@ -112,8 +111,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 TARGET_KERNEL_SOURCE := kernel/motorola/jeter
 TARGET_KERNEL_CONFIG := jeter_defconfig
 TARGET_KERNEL_VERSION := 4.9
-
-# Clang
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
