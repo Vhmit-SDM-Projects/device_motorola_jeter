@@ -1278,8 +1278,6 @@ vendor/lib64/sensor_calibrate.so|efb71205c08557d2961eff9c7bff20ca89a816d0
 vendor/lib64/sensors.rp.so|45fa1cc519a5fbc7ad359f406f3d125cae54aadc
 vendor/lib64/sensors.ssc.so|60fd557a52a70580b3dda1662820ba315b8b7411
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|e87c7e158e0b12a2fe6abcc3fded9fcff91fa989
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|b3d9be075b7d7e896e0086e90baacc602445258b
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|24e17b4c9f237b51e89fae26adc7cc573493514d
 
 # Thermal - from dpl_sprout - RKQ1.200928.002
 vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b

@@ -41,10 +41,6 @@ function blob_fixup() {
             done
             ;;
 
-        vendor/lib/hw/activity_recognition.msm8937.so | vendor/lib64/hw/activity_recognition.msm8937.so)
-            "${PATCHELF}" --set-soname activity_recognition.msm8937.so "${2}"
-            ;;
-
         vendor/lib/hw/camera.msm8937.so)
             "${PATCHELF}" --set-soname camera.msm8937.so "${2}"
             ;;
