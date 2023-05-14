@@ -766,13 +766,13 @@ vendor/lib/libmmcamera_vstab_module.so
 
 # Camera - from vince
 vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
-vendor/lib/libmmcamera_ppeiscore.so|6c6665aad61356da60ffd9b860145cb929cd85a1
+vendor/lib/libmmcamera_ppeiscore.so|b8af141bbb50f7d0ba0f6137563d00ec5eb70f3b
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
-vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
+vendor/lib/libtrueportrait.so|8d5c3f733a6351610f70592bd65f7461e0c55135
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 
 # CNE
@@ -926,7 +926,7 @@ vendor/lib/egl/libGLESv2_adreno.so|cd95e3dce59b222d1b1049277becc9f734a89f97
 vendor/lib/egl/libQTapGLES.so|957d9c98f3c29e7bf1da02fedac0789ada49dc70
 vendor/lib/egl/libq3dtools_adreno.so|b4b7bda387620de5f6ea2a29406f9351e855b8ed
 vendor/lib/libC2D2.so|c04a5ac1e576f63ebe91aba14bf917ee9e382be0
-vendor/lib/libc2d30-a3xx.so|f27d63012451687d1e55c443cc1857992cdb126835691ba39d856f4a75cbe5e1
+vendor/lib/libc2d30-a3xx.so|abd44619c1d202f71f803951b81bf46ab162fb47
 vendor/lib/libCB.so|6574501e0e342bac74044afc48b33f5119712417
 vendor/lib/libOpenCL.so|9ee3900265f9b855f526c0ce4fcfdaed51d62003
 vendor/lib/libRSDriver_adreno.so|374bce395a719d37638f8e92a4abd691f632298f
@@ -1162,8 +1162,8 @@ vendor/lib64/vendor.display.color@1.1.so|3e05113d52f1fc3b1938cb04491b441502f8ece
 vendor/lib64/vendor.display.color@1.2.so|3934b711a70b026ea9396408ab0ea330851218c2
 vendor/lib64/vendor.display.postproc@1.0.so|cd36d0796c6631d25056fdc5cb28a50219620e04
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|4c130641f85b8707acbc852eadcc480883396fdc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libdisp-aba.so|0620cb7c70c36de2757a34ae3bf545044ec6c34c
+vendor/lib64/libdisplayconfig.qti.so|e2a3971b331620828a6a7163b15170aad9935754
 
 # QMI
 vendor/bin/irsc_util
@@ -1272,7 +1272,7 @@ vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 vendor/bin/netmgrd|8752fb8cb74bd402a13ff291b7d2074415350984
 
 # Sensors - from deen_sprout - QPKS30.54-22-11
-vendor/bin/capsense_reset
+vendor/bin/capsense_reset|95cf79fc1dfdc7d95150fbe2c0d17c40f736b9a5
 vendor/bin/sensors.qti|5f962bb129099f282efd396a36c4e6bed5716dac
 vendor/lib/libsensor1.so|e8e9848a8d9e27f298d2789b365d962c2e7052ac
 vendor/lib/libsensor_reg.so|789af49787bf4f5fe6d99bd99bcced3a3f088ddc
