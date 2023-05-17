@@ -107,12 +107,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.hwc_set_default_colormode=true \
-    ro.vendor.display.cabl=0 \
+    debug.gralloc.enable_fb_ubwc=1 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1 \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
     ro.vendor.qti.am.reschedule_service=true \
-    vendor.display.disable_rotator_downscale=1 \
+    ro.sf.hwc_set_default_colormode=true \
+    ro.vendor.display.cabl=2 \
+    vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
-    vendor.gralloc.disable_ahardware_buffer=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.use_smooth_motion=1
 
 # Dolby
@@ -139,7 +145,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.enable.sglscale=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.sf.enable_hwc_vds=0 \
     debug.hwui.renderer=skiagl \
     renderthread.skia.reduceopstasksplitting=true \
     debug.renderengine.backend=skiaglthreaded \
@@ -149,10 +154,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
-    vendor.display.disable_rotator_split=1 \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0 \
+    sdm.debug.disable_rotator_split=1 \
+    sdm.debug.disable_skip_validate=1 \
     vendor.display.disable_skip_validate=1 \
-    vendor.display.perf_hint_window=50 \
-    vendor.gralloc.enable_fb_ubwc=1
+    sdm.perf_hint_window=50
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \

@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     libdisplayconfig \
-    libqdMetaData.system \
+    libqdMetaData \
     libtinyxml \
     libvulkan \
     memtrack.msm8937
@@ -107,8 +107,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.3.vendor
+    vendor.display.config@1.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \

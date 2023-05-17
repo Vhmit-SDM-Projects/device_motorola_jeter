@@ -85,8 +85,6 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
